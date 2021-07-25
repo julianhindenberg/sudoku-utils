@@ -1,0 +1,30 @@
+Summe:
+<input
+  type="text"
+  [(ngModel)]="sum"
+  (ngModelChange)="calculateCombinations()"
+/><br />
+Anzahl Ziffern:
+<input
+  type="text"
+  [(ngModel)]="totalDigits"
+  (ngModelChange)="calculateCombinations()"
+/>
+
+<pre>{{ calculatedCombinations | json }}</pre>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th *ngFor="let i of availableDigits">{{ i }}</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let combination of calculatedCombinations">
+      <td *ngFor="let digit of availableDigits">
+        {{ combination.includes(digit) ? digit : '' }}
+      </td>
+    </tr>
+  </tbody>
+</table>
