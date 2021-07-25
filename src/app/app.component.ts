@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   calculateCombinations(): void {
-    const combinations = [];
+    /*const combinations = [];
     const availableDigits = this.availableDigits.slice();
 
     let combinationFound = false;
@@ -72,7 +72,7 @@ export class AppComponent {
 
     console.log('currentCombination', currentCombination);
 
-    this.calculatedCombinations = combinations;
+    this.calculatedCombinations = combinations;*/
 
     /*for (let digitsCounter = 1; digitsCounter <= this.digits; digitsCounter++) {
 
