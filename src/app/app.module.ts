@@ -10,6 +10,6 @@ import { CombinationService } from './shared/service/combination/combination.ser
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [CombinationService],
+  providers: [ CombinationService ],
 })
 export class AppModule { }
