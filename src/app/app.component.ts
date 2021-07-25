@@ -12,7 +12,7 @@ export class AppComponent {
   calculatedCombinations = [];
 
   ngOnInit(): void {
-    this.calculateCombinations();
+    // this.calculateCombinations();
   }
 
   calculateCombinations(): void {
